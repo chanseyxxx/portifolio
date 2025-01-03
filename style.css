@@ -1,0 +1,37 @@
+#fotominha img {
+    width: 50%;
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+#tela1 {
+    display: flex; /* Torna a tela um contêiner flexível */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    width: 100%; /* Largura da div será 100% da largura da tela */
+    height: 100vh; /* Altura da div será 100% da altura da tela */
+}
+
+
+
+#header{
+    text-align: left;
+}
+
+.carousel-item {
+    padding: 20px;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.col-md-6 {
+    padding: 15px;
+}
