@@ -1,3 +1,24 @@
+body{
+    background-color: #fff9f9;
+}
+
+.questrial-regular {
+    font-family: "Questrial", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  h6 , a {
+    font-family: "Questrial", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  #header h1 {
+    font-size: 6rem; /* Aumenta o tamanho da fonte do h1 */
+  }
+  
+
 #fotominha img {
     width: 50%;
     height: auto; /* Mantém a proporção da imagem */
@@ -11,7 +32,18 @@
     height: 100vh; /* Altura da div será 100% da altura da tela */
 }
 
+#tela2 {
+    display: flex; /* Torna a tela um contêiner flexível */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    width: 100%; /* Largura da div será 100% da largura da tela */
+    height: 100vh; /* Altura da div será 100% da altura da tela */
+}
 
+#carouselExample{
+    width: 100%; /* Largura da div será 100% da largura da tela */
+    height: 100vh; /* Altura da div será 100% da altura da tela */
+}
 
 #header{
     text-align: left;
@@ -35,3 +67,49 @@
 .col-md-6 {
     padding: 15px;
 }
+
+html {
+    scroll-behavior: smooth;
+  }
+
+  /* Mudar a cor dos ícones de navegação */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #007bff; /* Cor azul */
+  border-radius: 50%;        /* Deixa os ícones arredondados */
+  width: 40px;
+  height: 40px;
+}
+
+/* Alterar a cor de fundo dos botões quando o usuário passa o mouse */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: #0056b3; /* Azul escuro ao passar o mouse */
+  border-radius: 50%;        /* Mantém o botão arredondado */
+}
+
+/* Ajustar o tamanho dos botões */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px;
+  height: 50px;
+}
+
+.yeseva-one-regular {
+    font-family: "Yeseva One", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  h1 {
+    font-family: "Yeseva One", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .navbar .container-fluid {
+    display: flex;
+    justify-content: flex-end; /* Alinha os itens à direita */
+  }
+
+  
