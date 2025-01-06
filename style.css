@@ -1,6 +1,18 @@
-body{
-    background-color: #fff9f9;
+body {
+  margin: 0; /* Remove margens externas */
+  padding: 0; /* Remove espaçamentos internos */
+  width: 100%; /* Largura completa */
+  height: 100%; /* Altura completa */
+  background-color: #fff9f9; /* Cor de fundo */
+  background-image: url(img/background.png); /* Adiciona a imagem de fundo */
+  background-repeat: no-repeat; /* Evita a repetição da imagem */
+  background-size: 100% 100%; /* Faz a imagem ter exatamente a mesma largura e altura do site */
+  background-position: top left; /* Garante o alinhamento no canto superior esquerdo */
+  background-attachment: scroll; /* Faz a imagem rolar junto com o site */
 }
+
+
+
 
 .questrial-regular {
     font-family: "Questrial", serif;
@@ -75,28 +87,54 @@ html {
     scroll-behavior: smooth;
   }
 
-  /* Mudar a cor dos ícones de navegação */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: #007bff; /* Cor azul */
-  border-radius: 50%;        /* Deixa os ícones arredondados */
-  width: 40px;
-  height: 40px;
+ /* Ajustando o tamanho e o contraste das setas do carrossel */
+.carousel-control-prev, .carousel-control-next {
+  background-color: rgba(0, 0, 0, 0.3); /* Fundo escuro e transparente para maior contraste */
+  color: #fff; /* Cor da seta branca */
+  border: 1px solid rgba(0, 0, 0, 0.3); /* Borda escura para combinar com o fundo */
+  padding: 15px; /* Tamanho maior para os botões */
+  border-radius: 50%; /* Bordas arredondadas */
+  font-size: 30px; /* Aumenta o tamanho das setas */
+  cursor: pointer; /* Deixa claro que é clicável */
+  transition: all 0.3s ease; /* Transição suave */
+  width: 60px; /* Tamanho maior do botão */
+  height: 60px; /* Tamanho maior do botão */
+  position: absolute; /* Torna os botões posicionáveis */
+  top: 50%; /* Alinha o botão no centro vertical */
+  transform: translateY(-50%); /* Ajusta a posição para garantir centralização vertical */
 }
 
-/* Alterar a cor de fundo dos botões quando o usuário passa o mouse */
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
-  background-color: #0056b3; /* Azul escuro ao passar o mouse */
-  border-radius: 50%;        /* Mantém o botão arredondado */
+/* Botão anterior (left) */
+.carousel-control-prev {
+  left: 10px; /* Alinha a seta à esquerda */
 }
 
-/* Ajustar o tamanho dos botões */
-.carousel-control-prev,
+/* Botão próximo (right) */
 .carousel-control-next {
-  width: 50px;
-  height: 50px;
+  right: 10px; /* Alinha a seta à direita */
 }
+
+/* Ajustando os ícones dentro dos botões */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-color: transparent; /* Deixa o fundo do ícone transparente */
+  color: #fff; /* Cor da seta branca */
+  font-size: 30px; /* Aumenta o tamanho das setas */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Adiciona sombra para destacar as setas */
+}
+
+/* Efeito hover para os botões */
+.carousel-control-prev:hover, .carousel-control-next:hover {
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo mais escuro ao passar o mouse */
+  border-color: rgba(255, 255, 255, 0.5); /* Borda mais clara ao passar o mouse */
+  color: #fff; /* Cor da seta branca ao passar o mouse */
+}
+
+/* Efeito hover para as setas */
+.carousel-control-prev-icon:hover, .carousel-control-next-icon:hover {
+  color: #fff; /* Mantém a cor da seta branca ao passar o mouse */
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8); /* Mais destaque com sombra */
+}
+
 
 .yeseva-one-regular {
     font-family: "Yeseva One", serif;
@@ -105,9 +143,10 @@ html {
   }
 
   h1 {
-    font-family: "Abril Fatface", serif;
+    font-family: "Yeseva One", serif;
     font-weight: 400;
-    font-style: normal
+    font-style: normal;
+
   }
   
   .navbar .container-fluid {
@@ -122,12 +161,63 @@ html {
     font-style: normal;
   }
   
+#navbar
+{
+  background-color: #c3bfc3;
+  opacity: 80%;
+}
 
-  
-  
-  
-  
-  
+#fotominha img{
+  border-radius: 10px;
+}
+
+#textoeu {
+  background-color: rgba(255, 255, 255, 0.2); /* Cor branca com transparência */
+  backdrop-filter: blur(4px); /* Aplica o desfoque */
+  border-radius: 10px; /* Opcional, para bordas arredondadas */
+  padding: 20px; /* Ajuste de espaçamento */
+  border: 5px solid rgba(255, 255, 255, 0.2); /* Borda sutil para destacar */
+}
+
+#textoprojeto {
+  background-color: rgba(255, 255, 255, 0.2); /* Cor branca com transparência */
+  backdrop-filter: blur(4px); /* Aplica o desfoque */
+  border-radius: 10px; /* Opcional, para bordas arredondadas */
+  padding: 20px; /* Ajuste de espaçamento */
+  border: 5px solid rgba(255, 255, 255, 0.2); /* Borda sutil para destacar */
+}
+
+
+.btn-glass {
+  background-color: rgba(255, 255, 255, 0.1); /* Cor de fundo branca com transparência */
+  color: #333; /* Texto escuro para boa legibilidade */
+  border: 1px solid rgba(0, 0, 0, 0.2); /* Borda sutil para destacar */
+  padding: 10px 20px; /* Ajuste de espaçamento interno */
+  border-radius: 10px; /* Bordas arredondadas */
+  backdrop-filter: blur(8px); /* Aplica o desfoque no fundo */
+  font-size: 16px; /* Tamanho da fonte */
+  cursor: pointer; /* Mostra que é clicável */
+  transition: all 0.3s ease; /* Transição suave */
+}
+
+.btn-glass:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* Cor de fundo escurecida ao passar o mouse */
+  border-color: rgba(255, 255, 255, 0.5); /* Borda mais destacada ao passar o mouse */
+  color: #000; /* Cor do texto mais escura ao passar o mouse */
+}
+
+#textoeu {
+  transform: translateY(50px);
+  opacity: 0;
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+#textoeu.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
   
   
   
