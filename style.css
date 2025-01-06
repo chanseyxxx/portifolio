@@ -11,9 +11,6 @@ body {
   background-attachment: scroll; /* Faz a imagem rolar junto com o site */
 }
 
-
-
-
 .questrial-regular {
     font-family: "Questrial", serif;
     font-weight: 400;
@@ -27,27 +24,8 @@ body {
   }
   
   #header h1 {
-    font-size: 6rem; /* Tamanho padrão para telas grandes */
+    font-size: 6rem; /* Aumenta o tamanho da fonte do h1 */
   }
-  
-  @media (max-width: 1200px) {
-    #header h1 {
-      font-size: 4.5rem; /* Ajuste para telas médias */
-    }
-  }
-  
-  @media (max-width: 768px) {
-    #header h1 {
-      font-size: 3rem; /* Ajuste para tablets */
-    }
-  }
-  
-  @media (max-width: 480px) {
-    #header h1 {
-      font-size: 2rem; /* Ajuste para telas pequenas (smartphones) */
-    }
-  }
-  
   #header h6 {
   text-align: left;
   }
@@ -237,7 +215,86 @@ html {
 }
 
 
+@media  only screen and (max-width: 768px) { /*tablet*/
+  #tela1 {
+    display: flex; /* Torna a tela um contêiner flexível */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    width: 100%; /* Largura da div será 100% da largura da tela */
+    margin: 10px;
+  }
   
+  #tela2 {
+    display: flex; /* Torna a tela um contêiner flexível */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    width: 100%; /* Largura da div será 100% da largura da tela */
+    height: 50%; /* Altura da div será 100% da altura da tela */
+    margin: 10px;
+  }
+
+  #carouselExample{
+      width: 100%; /* Largura da div será 100% da largura da tela */
+      height: 50%; /* Altura da div será 100% da altura da tela */
+  }
+}
+
+@media only screen and (max-width: 480px) { /*Celulaar*/
+  #tela1 {
+    display: flex; /* Torna a tela um contêiner flexível */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    width: 100%; /* Largura da div será 100% da largura da tela */
+    margin: 10px;
+}
+
+#tela2 {
+    display: flex; /* Torna a tela um contêiner flexível */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    width: 100%; /* Largura da div será 100% da largura da tela */
+    height: 50%; /* Altura da div será 100% da altura da tela */
+    margin: 10px;
+}
+
+#carouselExample{
+    width: 100%; /* Largura da div será 100% da largura da tela */
+    height: 50%; /* Altura da div será 100% da altura da tela */
+}
+
+#header h1 {
+  font-size: 3rem; /* Aumenta o tamanho da fonte do h1 */
+}
+
+.navbar .container-fluid {
+  display: flex;
+  justify-content: center; /* Alinha os itens à direita */
+
+}
+}
   
-  
+@media only screen and (min-width: 1200px) {
+  /* Estilos para telas grandes (telas com largura mínima de 1200px) */
+  #tela1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+  }
+
+  #tela2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+  }
+
+  #carouselExample {
+    width: 100%;
+    height: 50%;
+  }
+}
+
   
