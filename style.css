@@ -273,8 +273,8 @@ html {
 }
 }
   
-@media only screen and (min-width: 1200px) {
-  /* Estilos para telas grandes (telas com largura mínima de 1200px) */
+@media only screen and (min-width: 1920px) {
+  /* Estilos para telas muito grandes (telas com largura mínima de 1920px, como TVs 4K) */
   #tela1 {
     display: flex;
     justify-content: center;
@@ -296,5 +296,6 @@ html {
     height: 50%;
   }
 }
+
 
   
