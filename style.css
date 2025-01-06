@@ -27,8 +27,27 @@ body {
   }
   
   #header h1 {
-    font-size: 6rem; /* Aumenta o tamanho da fonte do h1 */
+    font-size: 6rem; /* Tamanho padrão para telas grandes */
   }
+  
+  @media (max-width: 1200px) {
+    #header h1 {
+      font-size: 4.5rem; /* Ajuste para telas médias */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #header h1 {
+      font-size: 3rem; /* Ajuste para tablets */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #header h1 {
+      font-size: 2rem; /* Ajuste para telas pequenas (smartphones) */
+    }
+  }
+  
   #header h6 {
   text-align: left;
   }
